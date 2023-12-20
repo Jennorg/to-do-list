@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  height: fit-content;
+  width: 100vw;
+  background-color: #702f9b;
+  display: grid;
+  place-items: center;
+  overflow-y: scroll;
+}
+
+main {
+  position: relative;
+  margin: 3% 0;
+  height: fit-content;  
+  width: 70vw;
+  min-width: 200px;
+  max-width: 500px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+  border-radius: 30px;
+  border: 5px solid black;
+}
+
+#title {
+  margin: 20px;
+}
+
+#textField {
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid #000;
+  padding: 5px;
+  color: #000;
+}
+
+#create_Button {
+  margin: 15px 0px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  user-select: none;
+  transition: border .2s ease-in-out, color .2 ease-in-out;
+}
+
+#create_Button:hover {
+  border: 2px solid #552278;
+  color: #702f9b;
+}
+
+#create_Button:active {
+  background-color: #552278;
+  color: #fff;
+}
+
+button, .check_Element {
+  cursor: pointer;
+}
+
+.element_Container {
+  display: flex;
+  width: 90%;
+  border: 2px solid #552278;
+  padding: 5px 0px;
+  height: 30px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.name_Element {
+  margin-left: 5px;
+}
+
+.button_Container {
+  margin: 0 10px;
+}
+
+.button_Container * {
+  margin: 0 5px;
+}
+
+.check_Element, .delete_Element {
+  width: 20px;
+  height: 18px;
+  vertical-align: middle;
+  align-self: center;
+}
+
+.delete_Element {
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: inherit;
+}
+
+.delete_Element * {
+  transform: scale(.9);
+}
+
+.finished {
+  border: 2px solid inherit;
+  background-color: #552278;
+  color: #f4f4f4;
+  text-decoration: line-through;
+}
+
+.finished > div .delete_Element {
+  background-color: #f4f4f4;
+}
+
+.delete_Element:hover {
+  border: 2px solid #552278;
+}
+
+.delete_Element:active {
+  background-color: rgb(245, 25, 25) !important;
+  color: #fff;
+}
