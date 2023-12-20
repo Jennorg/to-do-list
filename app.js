@@ -19,6 +19,7 @@ function addTask() {
   let title = document.createElement('h2');
   title.classList.add('name_Element');
   title.innerText = textField.value;
+  textField.value = '';
 
   let button_Container = document.createElement('div');
   button_Container.classList.add('button_Container');
