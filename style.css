@@ -78,10 +78,10 @@ button, .check_Element {
 }
 
 .name_Element {
+  font-size: 1.2em;
   margin-left: 5px;
-  white-space:inherit;
+  word-wrap: break-word;
   max-width: 60%;
-
 }
 
 .button_Container {
@@ -91,6 +91,7 @@ button, .check_Element {
 
 .button_Container * {
   margin: 0 5px;
+  width: 30%;
 }
 
 .check_Element, .delete_Element {

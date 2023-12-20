@@ -1,7 +1,6 @@
 const container = document.getElementById('container')
 const textField = document.getElementById('textField');
 const button = document.getElementById('create_Button');
-let tasks = [];
 
 button.addEventListener('click', addTask);
 textField.addEventListener('keydown', (e)=>{
